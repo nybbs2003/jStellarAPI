@@ -68,7 +68,7 @@ public class StellarPaymentTransaction extends StellarTransaction implements JSO
 		jsonTx.put("Destination", payee.toString());
 		jsonTx.put("Amount", amount.toJSON());
 		jsonTx.put("TransactionType", "Payment");
-		if(destinationTag>=0&&destinationTag<=4294967295l){
+		if(destinationTag>=0&&destinationTag<=0x7FFFFFFF){
 			jsonTx.put("DestinationTag", String.valueOf(destinationTag));
 		}
 		return jsonTx;

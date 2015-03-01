@@ -39,11 +39,11 @@ public class StellarDaemonRPCConnection extends StellarDaemonConnection {
 	protected URI stellarDaemonURI;
 	public static URI STELLAR_RPC_URI = URI.create("http://test.stellar.org:9002");
 
-	public StellarDaemonRPCConnection(URI StellarDaemonURI){
+	public StellarDaemonRPCConnection(URI StellarDaemonURI) {
 		this.stellarDaemonURI = StellarDaemonURI;
 	}
 
-	public StellarDaemonRPCConnection(){
+	public StellarDaemonRPCConnection() {
 		this(StellarDaemonRPCConnection.STELLAR_RPC_URI);
 	}
 
@@ -190,6 +190,10 @@ public class StellarDaemonRPCConnection extends StellarDaemonConnection {
 		rd.close();
 		is.close();
 		return txToSign;
+	}
+
+	public Tx getTranscation(byte[] tx_hash) throws Exception {
+		return getTranscation(DatatypeConverter.printHexBinary(tx_hash));
 	}
 
 	public Tx getTranscation(String txHash) throws Exception {
