@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>jStellarAPI</groupId>
 	<artifactId>jStellarAPI</artifactId>
-	<version>0.4.0-SNAPSHOT</version>
+	<version>0.4.0</version>
 	<name>jStellarAPI</name>
 	<description>Pure Java client API for the stellar network</description>
 	<build>
@@ -44,7 +44,7 @@
 		<dependency>
 			<groupId>net.i2p.crypto</groupId>
 			<artifactId>eddsa</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<version>0.0.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.commons</groupId>
@@ -60,31 +60,32 @@
 			<groupId>javax.validation</groupId>
 			<artifactId>validation-api</artifactId>
 			<version>1.1.0.Final</version>
-		</dependency><dependency>
-   <groupId>javax.websocket</groupId>
-   <artifactId>javax.websocket-client-api</artifactId>
-   <version>1.0</version>
-</dependency>
-<dependency>
-   <groupId>org.glassfish.tyrus</groupId>
-   <artifactId>tyrus-client</artifactId>
-   <version>1.1</version>
-</dependency>
-<dependency>
-   <groupId>org.glassfish.tyrus</groupId>
-   <artifactId>tyrus-container-grizzly</artifactId>
-   <version>1.1</version>
-</dependency>
-<dependency>
-   <groupId>javax.json</groupId>
-   <artifactId>javax.json-api</artifactId>
-   <version>1.0</version>
-</dependency>
-<dependency>
-   <groupId>org.glassfish</groupId>
-   <artifactId>javax.json</artifactId>
-   <version>1.0.1</version>
-</dependency>
+		</dependency>
+		<dependency>
+			<groupId>javax.websocket</groupId>
+			<artifactId>javax.websocket-client-api</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish.tyrus</groupId>
+			<artifactId>tyrus-client</artifactId>
+			<version>1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish.tyrus</groupId>
+			<artifactId>tyrus-container-grizzly</artifactId>
+			<version>1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.json</groupId>
+			<artifactId>javax.json-api</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish</groupId>
+			<artifactId>javax.json</artifactId>
+			<version>1.0.1</version>
+		</dependency>
 	</dependencies>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
